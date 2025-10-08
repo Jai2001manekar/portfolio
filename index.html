@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jayesh Manekar - Java, Android & Full-Stack Developer Portfolio">
+  <title>Jayesh Manekar | Futuristic Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/vanta@0.5.24/dist/vanta.net.min.js"></script>
+</head>
+<body>
+  <!-- Vanta.js Background -->
+  <div id="vanta-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">JAI</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="glow-text">Jayesh Manekar</h1>
+      <div class="tagline-container">
+        <p id="dynamic-tagline" class="tagline">Turning Code into Impact | Building the Future with Java, SQL & Android.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="assets/resume.pdf" download class="btn btn-outline">Download Resume</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="profile-container">
+        <img src="assets/profile.jpg" alt="Jayesh Manekar" class="profile-pic" />
+      </div>
+      <div class="about-text">
+        <p>
+          I’m a passionate Java and Android developer focused on building robust, efficient, and innovative solutions. With a strong foundation in backend systems, databases, and API integration, I aim to create seamless digital experiences. I thrive on problem-solving, scalability, and futuristic product design.
+        </p>
+        <div class="highlights">
+          <div class="highlight-item">
+            <div class="counter" data-target="2">2</div>
+            <span>Years of Experience</span>
+          </div>
+          <div class="highlight-item">
+            <div class="counter" data-target="10">10</div>
+            <span>Projects Completed</span>
+          </div>
+          <div class="highlight-item">
+            <div class="counter" data-target="7">7</div>
+            <span>Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills & Tech Stack</h2>
+    <div class="skills-grid">
+      <!-- Languages -->
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-bar"><span>Java</span><div class="bar"><div class="progress" style="width:95%"></div></div></div>
+        <div class="skill-bar"><span>C#</span><div class="bar"><div class="progress" style="width:70%"></div></div></div>
+        <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="progress" style="width:60%"></div></div></div>
+        <div class="skill-bar"><span>SQL</span><div class="bar"><div class="progress" style="width:90%"></div></div></div>
+        <div class="skill-bar"><span>HTML/CSS</span><div class="bar"><div class="progress" style="width:85%"></div></div></div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="skill-category">
+        <h3>Frameworks & Tools</h3>
+        <div class="skill-bar"><span>Spring Boot</span><div class="bar"><div class="progress" style="width:80%"></div></div></div>
+        <div class="skill-bar"><span>Android Studio</span><div class="bar"><div class="progress" style="width:85%"></div></div></div>
+        <div class="skill-bar"><span>JDBC</span><div class="bar"><div class="progress" style="width:85%"></div></div></div>
+        <div class="skill-bar"><span>React (Basic)</span><div class="bar"><div class="progress" style="width:50%"></div></div></div>
+        <div class="skill-bar"><span>Git</span><div class="bar"><div class="progress" style="width:75%"></div></div></div>
+      </div>
+
+      <!-- Databases & Concepts -->
+      <div class="skill-category">
+        <h3>Databases</h3>
+        <div class="skill-bar"><span>MySQL</span><div class="bar"><div class="progress" style="width:90%"></div></div></div>
+        <div class="skill-bar"><span>SQLite</span><div class="bar"><div class="progress" style="width:85%"></div></div></div>
+        <div class="skill-bar"><span>MongoDB (Learning)</span><div class="bar"><div class="progress" style="width:40%"></div></div></div>
+
+        <h3>Concepts</h3>
+        <div class="concepts">
+          <span>OOP</span>
+          <span>REST APIs</span>
+          <span>Microservices</span>
+          <span>SDLC</span>
+          <span>Testing (JUnit, Postman)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/bank-management.jpg" alt="Bank Management System">
+        <div class="project-info">
+          <h3>Bank Management System</h3>
+          <p>Account creation, PIN login, employee login, passbook, transactions.</p>
+          <div class="project-tags">
+            <span>#Java</span><span>#MySQL</span><span>#JDBC</span><span>#OOP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jai2001manekar/" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/ems.webp" alt="Employee Management">
+        <div class="project-info">
+          <h3>Employee Management System</h3>
+          <p>Role-based access (Admin, HR, Employee), persistent storage.</p>
+          <div class="project-tags">
+            <span>#Java</span><span>#File+Handling</span><span>#OOP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jai2001manekar/" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="assets/648304a87d218006cd2ed5df_Best Crypto Portfolio Trackers.webp" alt="Crypto Tracker">
+        <div class="project-info">
+          <h3>Cryptocurrency Portfolio Tracker</h3>
+          <p>Login, live-like dashboard, wallet management, transaction tracking.</p>
+          <div class="project-tags">
+            <span>#SpringBoot</span><span>#MySQL</span><span>#HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jai2001manekar/" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="assets/aa.jpg" alt="Expense Tracker">
+        <div class="project-info">
+          <h3>Expense Tracker </h3>
+          <p>Login, SQLite database, transaction records.</p>
+          <div class="project-tags">
+            <span>#Android</span><span>#Java</span><span>#SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jai2001manekar/" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience" class="section">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Software Development Intern</h3>
+          <p class="date">2019 – 2021</p>
+          <ul>
+            <li>Worked on small-scale applications and database-driven systems.</li>
+            <li>Collaborated with teams using Agile methodology.</li>
+            <li>Focused on clean code and object-oriented structure.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>B.Tech in Information Technology</h3>
+          <p class="date">Class of 2024</p>
+          <p>Key Subjects: Java Programming, Data Structures, Database Systems, Software Engineering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs">
+      <div class="cert-item">       
+          <div class="cert-logo">Java Certification</div>
+      </div>
+      <div class="cert-item">    
+          <div class="cert-logo">SQL Advanced</div>
+      </div>
+      <div class="cert-item">    
+          <div class="cert-logo">REST API (Intermediate)</div>
+      </div>
+      <div class="cert-item">    
+          <div class="cert-logo">CompTIA A+</div>
+      </div>
+      <div class="cert-item">    
+          <div class="cert-logo">Star Cyber Secure User (SCSU)</div>
+      </div>
+       <div class="cert-item">    
+          <div class="cert-logo">Software Engineer Intern</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form" name="contact" 
+  method="POST" 
+  data-netlify="true"
+  netlify-honeypot="bot-field">
+  <input type="hidden" name="bot-field" />
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><span>📧</span> jayesh.manekar@example.com</p>
+        <p><span>📱</span> <a href="https://linkedin.com/in/jayesh-%20manekar-3561b8192" target="_blank">LinkedIn</a></p>
+        <p><span>💻</span> <a href="https://github.com/jai2001manekar/" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jayesh Manekar. Crafted with <span class="heart">❤️</span> and Java.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
