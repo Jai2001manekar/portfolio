@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let i = 0;
   function typeWriter() {
     if (i < text.length) {
-      tagline.innerHTML = text.substring(0, i + 1) + '<span class="cursor">|</span>';
+      tagline.innerHTML = text.substring(0, i + 1) + '<span class="cursor"></span>';
       i++;
       setTimeout(typeWriter, 50);
     }
