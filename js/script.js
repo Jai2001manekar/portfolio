@@ -76,13 +76,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Form Submission (Prevent default for demo)
   const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thank you! Your message has been sent.');
-      form.reset();
+
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
     });
-  }
+
+    alert('Thank you! Your message has been sent.');
+    form.reset();
+  });
+}
+
 
   // Optional: Typing Effect for Tagline (Commented for now)
   
